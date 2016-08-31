@@ -40,9 +40,11 @@ public class OzelAdapter extends BaseAdapter {
 
         satir=mInflater.inflate(R.layout.liste,null);
         TextView txtView=(TextView)satir.findViewById(R.id.isimsoyisim);
+        TextView txtGosterim=(TextView)satir.findViewById(R.id.txtgosterim);
         ImageView image = (ImageView)satir.findViewById(R.id.simge);
         listeSinif satirListe = liste.get(position);
         txtView.setText(satirListe.getIsım());
+        txtGosterim.setText("Gösterim Tarihi " + satirListe.getGosterimTarhi());
         image.setImageResource(R.drawable.photo);
         if(position%2==0){
             satir.setBackgroundColor(Color.parseColor("#19283c"));

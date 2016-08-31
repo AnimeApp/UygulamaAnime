@@ -4,10 +4,12 @@ package com.mtmi.listview;
 public class listeSinif {
     private String simge;
     private String isimsoyisim;
-    public listeSinif(String resim,String isim){
+    private int gosterimTarhi;
+    public listeSinif(String resim,String isim,int gosterimTarhi){
         super();
         this.simge=resim;
         this.isimsoyisim=isim;
+        this.gosterimTarhi=gosterimTarhi;
     }
     public String getIsım(){
         return isimsoyisim;
@@ -15,5 +17,6 @@ public class listeSinif {
     public String getSimge(){
         return simge;
     }
+    public int getGosterimTarhi(){ return gosterimTarhi; }
 
 }

@@ -22,7 +22,7 @@
             android:height="30dp"
             android:text="Dram/Komedi"
             android:textColor="#ffffff"
-            android:layout_below="@+id/textView"
+            android:layout_below="@+id/txtgosterim"
             android:layout_alignLeft="@+id/isimsoyisim"
             android:layout_alignStart="@+id/isimsoyisim" />
 
@@ -37,15 +37,14 @@
             android:textStyle="normal"
             android:minWidth="110dp"
             android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_alignStart="@+id/textView" />
+            android:layout_alignLeft="@+id/txtgosterim"
+            android:layout_alignStart="@+id/txtgosterim" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Gösterim Tarihi : 2016"
-            android:id="@+id/textView"
+            android:id="@+id/txtgosterim"
             android:textSize="16dp"
             android:textColor="#ffffff"
             android:layout_alignBottom="@+id/isimsoyisim"
@@ -57,8 +56,8 @@
         android:text="Puanı 8.4"
         android:id="@+id/textView2"
         android:layout_alignBottom="@+id/filmtur"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/txtgosterim"
+        android:layout_toEndOf="@+id/txtgosterim"
         android:textColor="#ffffff" />
 
 
