@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        dizi.add(new listeSinif("asdasd", "İstanbul"));
-        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg","İstanbul"));
-        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg","İstanbul"));
-        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg","İstanbul"));
-        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg","İstanbul"));
-
+         dizi.add(new listeSinif("asdasd", "İstanbul"));
+        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg", "Yarının Sınırında"));
+        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg","Jason Borne"));
+        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg","Suç Şehri"));
+        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg","Kardeşim İçin"));
+        dizi.add(new listeSinif("http://lorempixel.com/output/business-q-c-50-50-5.jpg","Aşkta Yanlış Yoktur"));
         OzelAdapter ozel= new OzelAdapter(this,dizi);
         ListView listview = (ListView)findViewById(R.id.listView);
         listview.setAdapter(ozel);
