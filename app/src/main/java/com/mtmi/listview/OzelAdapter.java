@@ -3,21 +3,24 @@ package com.mtmi.listview;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 
 public class OzelAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<listeSinif> liste;
-
+Context mContext;
     public OzelAdapter(Activity activity,List<listeSinif> listes){
+        mContext = activity.getApplicationContext();
         mInflater=(LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         liste=listes;
     }
@@ -45,7 +48,9 @@ public class OzelAdapter extends BaseAdapter {
         listeSinif satirListe = liste.get(position);
         txtView.setText(satirListe.getIsım());
         txtGosterim.setText("Gösterim Tarihi " + satirListe.getGosterimTarhi());
-        image.setImageResource(R.drawable.photo);
+       // image.setImageResource(R.drawable.photo);
+
+        Picasso.with(mContext).load("http://lorempixel.com/output/nature-q-c-60-60-7.jpg").into(image);
         if(position%2==0){
             satir.setBackgroundColor(Color.parseColor("#19283c"));
         }else{
