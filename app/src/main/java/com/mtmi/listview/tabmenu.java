@@ -1,8 +1,7 @@
 package com.mtmi.listview;
 
 
-import android.content.Intent;
-import android.graphics.drawable.BitmapDrawable;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,9 +19,8 @@ public class tabmenu extends AppCompatActivity {
 
         TabHost.TabSpec tabSpec1=tabHost.newTabSpec("tab1");
         tabSpec1.setContent(R.id.tab1);
-        ImageView as= new ImageView(this);
-        as.setImageResource(R.drawable.photo);
         tabSpec1.setIndicator("anasayfa",null);
+        tabHost.addTab(tabSpec1);
 
         tabHost.addTab(tabSpec1);
         TabHost.TabSpec tabSpec2=tabHost.newTabSpec("tab2");

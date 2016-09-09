@@ -42,15 +42,20 @@ Context mContext;
             View satir;
 
         satir=mInflater.inflate(R.layout.liste,null);
+
         TextView txtView=(TextView)satir.findViewById(R.id.isimsoyisim);
         TextView txtGosterim=(TextView)satir.findViewById(R.id.txtgosterim);
         ImageView image = (ImageView)satir.findViewById(R.id.simge);
+        TextView txtID=(TextView)satir.findViewById(R.id.txtID);
+        TextView txtTur=(TextView)satir.findViewById(R.id.filmtur);
+
         listeSinif satirListe = liste.get(position);
         txtView.setText(satirListe.getIsım());
-        txtGosterim.setText("Gösterim Tarihi " + satirListe.getGosterimTarhi());
-       // image.setImageResource(R.drawable.photo);
+        txtGosterim.setText("Gösterim Tarihi :" + satirListe.getGosterimTarhi());
+        txtID.setText(satirListe.getFilmID());
+        txtTur.setText(satirListe.getTur());
 
-        Picasso.with(mContext).load("http://lorempixel.com/output/nature-q-c-60-60-7.jpg").into(image);
+        Picasso.with(mContext).load(satirListe.getSimge()).into(image);
         if(position%2==0){
             satir.setBackgroundColor(Color.parseColor("#19283c"));
         }else{
