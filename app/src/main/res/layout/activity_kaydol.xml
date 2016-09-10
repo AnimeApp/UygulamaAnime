@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mtmi.listview.LoginPage"
+    android:background="#f7fafb">
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Parola"
+        android:id="@+id/Password_k"
+        android:layout_below="@+id/ePosta_k"
+        android:layout_alignLeft="@+id/ePosta_k"
+        android:layout_alignStart="@+id/ePosta_k" />
+
+    <Button
+        android:background="@drawable/shae"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:onClick="tikla1"
+        android:text="KAYDOL"
+        android:id="@+id/signIn_k"
+        android:singleLine="false"
+        android:textColor="#f7fafb"
+        android:layout_below="@+id/Password_k"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="E-posta"
+        android:ems="10"
+        android:id="@+id/ePosta_k"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/facebook_k"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/fpic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/signIn_k"
+        android:layout_alignStart="@+id/signIn_k"
+        android:onClick="facebookButton"
+        />
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/gPlus_k"
+        android:background="@drawable/gpic"
+        android:layout_alignTop="@+id/facebook_k"
+        android:layout_alignRight="@+id/signIn_k"
+        android:layout_alignEnd="@+id/signIn_k"
+        android:onClick="gPlusButton"/>
+
+</RelativeLayout>

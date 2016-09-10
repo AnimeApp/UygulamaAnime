@@ -18,7 +18,7 @@ import java.util.List;
 public class OzelAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<listeSinif> liste;
-Context mContext;
+    Context mContext;
     public OzelAdapter(Activity activity,List<listeSinif> listes){
         mContext = activity.getApplicationContext();
         mInflater=(LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
